@@ -1,8 +1,9 @@
 :root {
-    --soft-red: #ff0000;
+    --soft-red: #ff000055;
     --yellow: #fad400;
     --dark-desaturated-cyan: #25564b;
     --dark-blue: #19536b;
+    --light-blue: #87cefa;
     --dark-moderate-cyan: #458c7e;
     --Very-dark-desaturated-blue: #23303e;
     --Very-dark-grayish-blue: #5a636c;
@@ -26,6 +27,8 @@ a {
 html {
     font-size: 62.5%;
 }
+
+/* banner */
 
 .banner {
     height: 100vh;
@@ -60,7 +63,7 @@ header ul li a {
 }
 
 header ul li button {
-    background: #87cefa;
+    background: var(--light-blue);
     color: var(--white);
     padding: 1rem;
     border-radius: 5rem;
@@ -88,4 +91,51 @@ header ul li button {
     border-bottom: 0.8rem solid var(--white);
     border-left: 0.8rem solid var(--white);
     transform: rotate(-45deg);
+}
+
+/* About */
+
+.about-item {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.about-description {
+    width: 50%;
+    padding: 0 10rem;
+}
+
+.about-description h2 {
+    font-family: 'Fraunces';
+    color: var(--dark-blue);
+    font-size: 4rem;
+}
+
+.about-description p {
+    color: var(--Dark-grayish-blue);
+    font-size: 1.8rem;
+    width: 80%;
+    margin: 2rem 0;
+}
+
+.about-description a {
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 1.6rem;
+}
+
+.about-description a.yellow {
+    border-bottom: 0.5rem solid var(--yellow);
+}
+
+.about-description a.red {
+    border-bottom: 0.5rem solid var(--soft-red);
+}
+
+.about-image-container {
+    width: 50%;
+}
+
+.about-image-container img {
+    max-width: 100%;
 }
