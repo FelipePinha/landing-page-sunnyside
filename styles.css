@@ -12,11 +12,6 @@
     --white: #fff;
 }
 
-a {
-    text-decoration: none;
-    color: var(--white);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +21,11 @@ a {
 
 html {
     font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
 }
 
 /* banner */
@@ -95,6 +95,10 @@ header ul li button {
 
 /* About */
 
+.about {
+    font-size: 0;
+}
+
 .about-item {
     display: flex;
     align-items: center;
@@ -115,7 +119,6 @@ header ul li button {
 .about-description p {
     color: var(--Dark-grayish-blue);
     font-size: 1.8rem;
-    width: 80%;
     margin: 2rem 0;
 }
 
@@ -138,4 +141,101 @@ header ul li button {
 
 .about-image-container img {
     max-width: 100%;
+}
+
+/* services */
+
+.services {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    font-size: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.service-item {
+    width: 50%;
+    height: 50rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+.service-item .cyan {
+    color: var(--dark-moderate-cyan);
+}
+.service-item .blue {
+    color: var(--dark-blue);
+}
+
+.service-item h2 {
+    font-size: 4rem;
+    font-family: 'Fraunces';
+}
+
+.service-item p {
+    font-size: 1.6rem;
+    width: 50%;
+    color: var(--dark-blue);
+    margin-top: 1rem;
+}
+
+/* testimonials */
+.testimonials {
+    padding: 5rem;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Fraunces';
+    letter-spacing: 0.4rem;
+    color: var(--Dark-grayish-blue);
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+.testimonial .testimonial-image {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 5rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.testimonial-image img {
+    width: 100%;
+}
+
+.testimonial p {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    color: var(--Dark-grayish-blue);
+}
+
+.testimonial .person-info {
+    margin-top: 2rem;
+}
+
+.testimonial .person-info h4 {
+    color: var(--dark-blue);
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.testimonial .person-info span {
+    color: var(--Dark-grayish-blue);
+    font-size: 1.2rem;
 }
