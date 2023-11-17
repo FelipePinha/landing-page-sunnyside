@@ -1,0 +1,91 @@
+:root {
+    --soft-red: #ff0000;
+    --yellow: #fad400;
+    --dark-desaturated-cyan: #25564b;
+    --dark-blue: #19536b;
+    --dark-moderate-cyan: #458c7e;
+    --Very-dark-desaturated-blue: #23303e;
+    --Very-dark-grayish-blue: #5a636c;
+    --Dark-grayish-blue: #818498;
+    --Grayish-blue: #a7abae;
+    --white: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow';
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.banner {
+    height: 100vh;
+    background-image: url('./images/desktop/image-header.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    padding: 0 2rem;
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+header ul li a {
+    font-size: 1.6rem;
+}
+
+header ul li button {
+    background: #87cefa;
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 5rem;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.banner .title {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.banner .title > h1 {
+    font-size: 3.8rem;
+    font-family: 'Fraunces';
+    letter-spacing: 0.4rem;
+    color: var(--white);
+}
+
+.banner .title .arr-down {
+    margin: 1rem auto;
+    height: 4rem;
+    width: 4rem;
+    border-bottom: 0.8rem solid var(--white);
+    border-left: 0.8rem solid var(--white);
+    transform: rotate(-45deg);
+}
