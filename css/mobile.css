@@ -112,3 +112,15 @@
         padding: 0;
     }
 }
+
+@media (max-width: 425px) {
+    .mobile-menu-items {
+        right: 5%;
+    }
+}
+
+@media (max-width: 320px) {
+    .mobile-menu-items {
+        right: 7%;
+    }
+}
