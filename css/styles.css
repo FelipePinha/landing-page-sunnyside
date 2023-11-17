@@ -21,6 +21,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -147,12 +148,10 @@ header ul li button {
 
 .services {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 0;
     font-size: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .service-item {
@@ -164,6 +163,9 @@ header ul li button {
     justify-content: flex-end;
     align-items: center;
     text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .service-item .cyan {
@@ -244,6 +246,7 @@ header ul li button {
 .showcase {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     font-size: 0;
 }
 

@@ -64,4 +64,51 @@
         color: var(--Very-dark-grayish-blue);
         font-size: 1.4rem;
     }
+
+    .about-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-item:nth-child(1) {
+        flex-direction: column-reverse;
+    }
+
+    .about-description {
+        width: 100%;
+        margin: 4rem 0;
+    }
+
+    .about-image-container {
+        width: 100%;
+        margin: 0 0 0 2rem;
+        margin: 0 auto;
+    }
+
+    .about-image-container img {
+        width: 100%;
+    }
+
+    .service-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .showcase-img-container {
+        width: 100%;
+    }
+
+    .showcase-img-container img {
+        width: 100%;
+    }
+
+    .about-description {
+        padding: 0;
+    }
 }
